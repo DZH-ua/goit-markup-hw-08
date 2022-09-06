@@ -416,6 +416,7 @@ button {
   border-radius: 4px;
   z-index: 100;
   padding: 40px;
+  overflow: auto;
 }
 
 .button-modal-exit {
@@ -435,6 +436,11 @@ button {
   fill: var(--hover-color);
 }
 
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;

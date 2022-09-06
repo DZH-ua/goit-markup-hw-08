@@ -9,6 +9,7 @@
     border-radius: 4px;
     z-index: 100;
     padding: 40px;
+    overflow: auto;
 }
 
 .button-modal-exit {
@@ -29,6 +30,12 @@
     .button-modal-exit:hover &,
     .button-modal-exit:focus & {
         fill: var(--hover-color);
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .modal {
+        width: 100%;
     }
 }
 
