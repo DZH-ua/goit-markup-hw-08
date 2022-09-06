@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <nav class="navigation">
+                <div class="logo-tablet">
+                    <a href="./index.html" class="logo">Web<span class="header__logo">Studio</span></a>
+                </div>                
+                <ul class="navigation-list">
+                    <li class="navigation-list__item">
+                        <a href="./index.html" class="navigation-list__link">Студія</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="./portfolio.html" class="navigation-list__link navigation-list__link--active">Портфоліо</a>
+                    </li>
+                    <li class="navigation-list__item">
+                        <a href="" class="navigation-list__link">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <a href="mailto:info@devstudio.com" class="contact-list__contact header__small">
+                        <svg class="contact-list__icon" width="16" height="12">
+                            <use href="../goit-markup-hw-08/images/icons.svg#icon-mail"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="contact-list__item">
+                    <a href="tel:+380961111111" class="contact-list__contact header__small">
+                        <svg class="contact-list__icon" width="10" height="16">
+                            <use href="../goit-markup-hw-08/images/icons.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+
+            <button type="button" class="mobile-menu-btn" data-menu-open>
+                <svg class="mobile-menu-btn__icon" width="40" height="40">
+                    <use href="../goit-markup-hw-08/images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+
+                    <button type="button" class="mobile-menu__close-btn" data-menu-close>
+                        <svg class="button-modal-exit__icon" width="40" height="40">
+                            <use href="../goit-markup-hw-08/images/icons.svg#icon-mobile-close"></use>
+                        </svg>
+                    </button>
+
+                    <nav class="mobile-nav">
+                        <ul class="mobile-nav__list">
+                            <li class="mobile-nav__item">
+                                <a href="./index.html" class="mobile-nav__link">Студія</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="./portfolio.html" class="mobile-nav__link mobile-nav__link--active">Портфоліо</a>
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a href="" class="mobile-nav__link">Контакти</a>
+                            </li>
+                        </ul>                
+                    </nav>
+
+                    <div class="mobile-menu__contacts">
+                        <ul class="mobile-contact__list">
+                            <li class="mobile-contact__item">
+                                <a href="tel:+380961111111" class="mobile-contact__tel">
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                            <li class="mobile-contact__item">
+                                <a href="mailto:info@devstudio.com" class="mobile-contact__mail">
+                                    info@devstudio.com
+                                </a>
+                            </li>                        
+                        </ul>
+    
+                        <ul class="mobile-social__list">
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link mobile-social__link--after">Instagram</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link mobile-social__link--after">Twitter</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link mobile-social__link--after">Facebook</a>
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+
+               </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="section portfolio">
+            <div class="container portfolio__container">
+                <h1 class="title visually-hidden">Портфоліо</h1>
+                <ul class="filter-list">
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__button">Усі</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__button">Веб-сайти</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__button">Додатки</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__button">Дизайн</button>
+                    </li>
+                    <li class="filter-list__item">
+                        <button type="button" class="filter-list__button">Маркетинг</button>
+                    </li>
+                </ul>                  
+                <ul class="portfolio-list">                
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">                            
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-note@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-note@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-note@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-note@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-note@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-note@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-note@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-note@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-note@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-note@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.jpg" 
+                                            alt="note" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>                                                               
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Технокряк</h2>
+                                    <p class="portfolio-card__description">Веб-сайт</p>
+                                </div>                                
+                            </div>                                                      
+                        </a>                    
+                    </li>
+                    <li class="portfolio-list__item"> 
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.jpg" 
+                                            alt="basket" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="portfolio-card__description">Дизайн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.jpg" 
+                                            alt="seafood" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Ресторан Seafood</h2>
+                                    <p class="portfolio-card__description">Додаток</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">                
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.jpg" 
+                                            alt="headphones" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Проєкт Prime</h2>
+                                    <p class="portfolio-card__description">Маркетинг</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.jpg" 
+                                            alt="boxes" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Проєкт Boxes</h2>
+                                    <p class="portfolio-card__description">Додаток</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.jpg" 
+                                            alt="pc" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Inspiration has no Borders</h2>
+                                    <p class="portfolio-card__description">Веб-сайт</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>                
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">                                    
+
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-book@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-book@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-book@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-book@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-book@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-book@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-book@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-book@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-book@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-book@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.jpg" 
+                                            alt="book" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Видання Limited Edition</h2>
+                                    <p class="portfolio-card__description">Дизайн</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.jpg" 
+                                            alt="lab" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Проєкт LAB</h2>
+                                    <p class="portfolio-card__description">Маркетинг</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="portfolio-list__item">
+                        <a href="" class="portfolio-list__link">
+                            <div class="portfolio-card">
+                                <div class="portfolio-card__overley">
+                                    
+                                    <picture>
+                                        <!-- Desktop -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@1x.webp 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 1200px)"
+                                        />
+            
+                                        <!-- Tablet -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@1x.webp 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@2x.jpg 2x
+                                            "                                
+                                            media="(min-width: 768px)"
+                                        />
+            
+                                        <!-- Mobile -->
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.webp 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.jpg 1x,
+                                                ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@2x.jpg 2x
+                                            "                                
+                                            media="(max-width: 767px)"
+                                        />                                                        
+            
+                                        <img
+                                            class="portfolio-list__img"
+                                            src="./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.jpg" 
+                                            alt="marketing" 
+                                        />                            
+                                    </picture>
+
+                                    <p class="portfolio-card__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                                </div>
+                                <div class="portfolio-card__border">
+                                    <h2 class="portfolio-card__title">Growing Business</h2>
+                                    <p class="portfolio-card__description">Додаток</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>           
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="tablet-container">
+                <div class="mobile-container">
+                    <div class="logo-container">
+                        <a href="./index.html" class="logo">Web<span class="footer__logo">Studio</span></a>
+                    </div>
+                    <address>
+                        <ul class="address-list">
+                            <li class="address-list__item">
+                                <a href="https://goo.gl/maps/YHiXEsKPC5kcfU1M9" target="_blank" rel="noopener noreferrer"
+                                    class="contact-list__contact address-list__link">
+                                    м. Київ, пр-т Лесі Українки, 26
+                                </a>
+                            </li>
+                            <li class="address-list__item">
+                                <a href="mailto:info@example.com" class="contact-list__contact footer__large">info@example.com</a>
+                            </li>
+                            <li class="address-list__item">
+                                <a href="tel:+380991111111" class="contact-list__contact footer__large">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="footer-join">
+                    <h3 class="post-title post-title--white">Приєднуйтесь</h3>
+                    <ul class="social-list">
+                        <li class="social-list__item social-list__item--back-grey">
+                            <a href="" target="_blank" class="social-list__link social-list__link--white">
+                                <svg class="social-list__icon" width="20" height="20">
+                                    <use href="../goit-markup-hw-08/images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item social-list__item--back-grey">
+                            <a href="" target="_blank" class="social-list__link social-list__link--white">
+                                <svg class="social-list__icon" width="20" height="20">
+                                    <use href="../goit-markup-hw-08/images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item social-list__item--back-grey">
+                            <a href="" target="_blank" class="social-list__link social-list__link--white">
+                                <svg class="social-list__icon" width="20" height="20">
+                                    <use href="../goit-markup-hw-08/images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item social-list__item--back-grey">
+                            <a href="" target="_blank" class="social-list__link social-list__link--white">
+                                <svg class="social-list__icon" width="20" height="20">
+                                    <use href="../goit-markup-hw-08/images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-mailing">
+                <p class="post-title footer__post-title--white post-title--white">Підпишіться на розсилку</p>
+                <form class="join-form">
+                    <input 
+                        type="email" 
+                        name="user_email" 
+                        id="user-email"
+                        placeholder="E-mail"
+                        class="join-form__input"
+                    >
+                    <label for="user-email"></label>
+                    <button 
+                        type="submit" 
+                        class="join-button join-button--form">
+                        &nbsp;Підписатися
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="./js/mobile-menu.js"></script>
+
+</body>
+</html>

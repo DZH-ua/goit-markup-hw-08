@@ -1,0 +1,34 @@
+.header__logo {
+    color: var(--main-color);
+}
+
+.footer__logo {
+    color: var(--secondary-color);
+}
+
+.logo-container {
+    margin-bottom: 20px; 
+    text-align: center; 
+}
+
+.logo {
+    font-family: var(--secondary-font);
+    color: var(--hover-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    
+    // 1200+
+    @media screen and (min-width: 1200px) {    
+        margin-right: 93px;
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .logo-tablet {
+        margin-right: 88px; 
+   }
+}

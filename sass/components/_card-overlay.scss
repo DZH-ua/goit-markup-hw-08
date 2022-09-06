@@ -1,0 +1,41 @@
+.portfolio-card__overley {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card__text {    
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 350ms ease 100ms;
+    padding: 77px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: var(--secondary-color);
+    
+    .portfolio-list__item:hover & {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .portfolio-card__text {
+        padding-top: 24px;
+        font-size: 14px;
+    }
+}
+
+.portfolio-card__text {
+    @media screen and (min-width: 768px) {
+        padding: 49px 24px 77px 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 63px 24px;
+    }
+}

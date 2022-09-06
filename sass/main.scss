@@ -1,0 +1,37 @@
+// base - глобальные стили, сбросы, контейнеры и т.д.;
+// components - Элементы, которые повторяются в разных секция и страницах - заголовки, кнопки, иконки соцсетей, лого, навигация;
+// layout - элементы секций (hero, about etc...);
+// utils - переменные, скрытие;
+// placeholder - описываем шаблон, со стилями, которые повторяются и которые мы хотим применить дальше через @extend;
+// mixin - описываем шаблон свойств, но применять дальше можем только его компоненты через @include;
+
+
+@import "./utils/variables";
+@import "./utils/visually-hiden";
+@import "./utils/placeholders";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/title";
+@import "./components/social-list";
+@import "./components/buttons";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/post-title";
+@import "./components/footer-form";
+@import "./components/backdrop";
+@import "./components/modal-window";
+@import "./components/modal-form";
+@import "./components/card-overlay";
+@import "./components/mobile-menu";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/examples";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
