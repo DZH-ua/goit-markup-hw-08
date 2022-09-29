@@ -35,14 +35,12 @@
 
 @media screen and (max-width: 479px) {
     .modal {
-        width: 100%; 
-        
+        width: 100%;         
     }
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 768px) {
     .modal {
-        bottom: 50%;
         height: 100%;        
     }
 }

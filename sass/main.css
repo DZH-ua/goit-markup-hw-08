@@ -441,9 +441,8 @@ button {
     width: 100%;
   }
 }
-@media (orientation: landscape) {
+@media (orientation: landscape) and (max-height: 768px) {
   .modal {
-    bottom: 50%;
     height: 100%;
   }
 }
