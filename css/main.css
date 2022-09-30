@@ -403,6 +403,7 @@ button {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  overflow: none;
 }
 
 .modal {
@@ -417,6 +418,10 @@ button {
   z-index: 100;
   padding: 40px;
   overflow: auto;
+}
+
+.overflow-none {
+  overflow: hidden;
 }
 
 .button-modal-exit {
